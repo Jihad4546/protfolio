@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+/* navber section starts here  */
+html{
+    background: rgb(236, 173, 173);
+}
+.nav{
+    width:92%;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+    box-shadow: .3rem .5rem rbga(0,0,0, .5);
+    background:white;
+    border-radius: .5rem;
+    position: fixed;
+    height: 10vh;
+    z-index: 1000;
+    transform: translate(3.5%);
+}
+.nav-heading h1{
+    font-size: 3rem;
+}
+.nav-list{
+    display: flex;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+    margin-right: 2rem;
+    font-size: 1.4rem;
+   
+}
+.nav-list ul li a {
+    color:red;
+   transition: 0.5s;
+}
+.nav-list ul li a:hover{
+    color:black
+}
+#bars{
+    display: none
+}
+label{
+    display: none;
+}
+/* hero section starts here  */
+.hero-section{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heading h2{
+    font-size: 2.5rem;
+    color:black;
+    padding-bottom: 2rem;
+
+}
+.heading h1{
+    font-size: 3rem;
+    color:black;
+}
+.heading p{
+    width: 40%;
+    line-height: 1.3rem;
+    color:black;
+    margin-bottom: 1rem;
+}
+.heading a {
+    background:red;
+    padding: 12px 15px;
+    color:white;
+    font-size: 1.4rem;
+    border-radius: 0 15px 0 15px;
+   
+}
+.img img{
+    width:100%;
+    height: 400px;
+}
+/* hero section ends here  */
+/* my service start here  */
+.my-services{
+        text-align: center;
+        color:black;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+.service{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.services{
+    width:30%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: 1rem;
+    text-align: center;
+    height: 60vh;;
+}
+.services i{
+    font-size: 3rem;
+    color:black;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.services h2{
+    font-size: 2rem;
+    color:black;
+}
+.services p {
+    color:black;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
+.services a {
+    background:red;
+    padding:12px 16px;
+    color:wheat;
+    border-radius: 20px 0 20px 0;
+    margin-top: 2rem;
+}
+/* my service ends here  */
+/* my portfolio start here  */
+.portfolio{
+    text-align: center;
+    font-size: 3rem;
+    margin:5rem 0;
+}
+.portfolios{
+    width: 80%;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-around;
+    align-items: center;
+    gap:1rem;
+   
+   
+
+}
+
+.travels{
+    box-shadow: rgba(9, 9, 16, 0.2) 0px 7px 
+    29px 0px;
+}
+.travels h1{
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: -1rem;
+    
+}
+.travels img{
+    width:350px;
+    height:auto;
+    object-fit: cover;
+    
+}
+.rows {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rows .contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.contact h1{
+    text-align: center;
+    font-size: 3rem;
+    margin:5rem 0;
+
+}
+.contact .rows .contact-info .box {
+
+    margin: 2rem 2rem;
+}
+
+.contact .rows .contact-info .box h3 {
+    font-size: 2rem;
+    color: #333;
+
+
+}
+
+.contact .rows .contact-info .box h3 i {
+    color: var(--primary-color);
+}
+
+.contact .rows .contact-info .box p {
+    font-size: 1.5rem;
+    color: #767272;
+
+}
+
+.rows .contact-info .contect-form-container {
+    width: 40%;
+}
+
+.contect-form-container h3 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: var(--primary-color);
+}
+
+.contect-form-container form input,
+textarea {
+    outline: none;
+    border: .1rem solid var(--primary-color);
+    height: 2.5rem;
+    background: #fff;
+    border-radius: .2rem;
+    margin: 1rem 1rem 1rem 0;
+    font-size: 1.2rem;
+    width: 46%;
+}
+
+.contect-form-container textarea {
+    width: 95%;
+    margin: 0 auto;
+    height: 20%;
+    font-size: 1.3rem;
+    resize: none;
+    margin: 1rem 0;
+
+}
+
+.contect-form-container .submit {
+    cursor: pointer;
+    color: #000;
+    background: var(--primary-color);
+    border: .2rem solid var(--primary-color);
+
+}
+
+.contect-form-container .submit:hover {
+    background: none;
+}
+/* my portfolio ends here  */
+/* responsive starts here  */
+@media (max-width:768px) {
+    .nav{
+        width:100%;
+        transform: translate(0);
+        position: fixed;
+        margin-top: -200px;
+    }
+    .nav-list ul{
+        flex-direction: column;
+        background: url(../img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top:22rem ;
+        margin-right: -210px;
+        width:150px;
+        transition: 0.5s;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        border-radius: 2rem;
+    }
+    label{
+        display: block;
+        margin-top:19.5rem;
+        margin-right: 1.5rem;
+        font-size: 2rem;
+    }
+    .nav input:checked~ .nav-list ul{
+        margin-right: -12px;
+    }
+    .hero-section{
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        margin-top: 200px;
+    }
+    .hero-section p{
+        width:80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .hero-section a {
+    margin-top: 2rem; 
+        
+    }
+    
+    .img img{
+        margin:2rem 0;
+    }
+    .my-services h2{
+        margin-top: 4rem;
+
+    }
+    .service {
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .services{
+        width:50%;
+        margin-top: 2rem;
+    }
+}
+/* responsive ends here  */
